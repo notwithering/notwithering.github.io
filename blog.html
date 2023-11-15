@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a href="/" class="button" style="text-decoration: none;">
+                        <span class="fgRed">withering</span><span>@away ~ $ </span><span id="flicker">_</span>
+                    </a>
+                    <script defer>
+                        var flickeringElement = document.getElementById("flicker")
+                        setInterval(function() {
+                            if (flickeringElement.innerText === "_") {
+                                flickeringElement.innerText = "\u00A0"
+                            } else if (flickeringElement.innerText === "\u00A0") {
+                                flickeringElement.innerText = "_"
+                            }
+                        }, 1000)
+                    </script>
+                </h1>
+            </div>
+
+            <div>
+                <h1>
+                    <a href="" class="button">|Blog|</a>
+                </h1>
+            </div>
+        </header>
+
+        <div class="mainContent">
+            
+        </div>
+
+        <footer>
+            <div>
+                <h2>
+                    <span>Written by WitheringAway</span>
+                </h2>
+            </div>
+
+            <div>
+                <h2>
+                    <a href="https://twitter.com/Cores64">Twitter</a>
+                    <a href="https://github.com/NotWithering">Github</a>
+                    <a href="https://discord.com/users/432983959522246657">Discord</a>
+                </h2>
+            </div>
+        </footer>
+    </body>
+</html>
