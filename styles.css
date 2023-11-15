@@ -2,6 +2,7 @@
     --fgWhite: #aaaaaa;
     --fgRed: #ff5555;
     --fgBlue: #0000aa;
+    --fgGray: #555555;
 }
 .fgRed {
     color: var(--fgRed);
@@ -22,6 +23,9 @@ a.button {
 a.button:hover {
     text-decoration: underline;
     text-decoration-color: var(--fgWhite);
+}
+time {
+    color: var(--fgGray);
 }
 
 html {
