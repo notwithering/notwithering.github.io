@@ -27,6 +27,15 @@ a.button:hover {
 time {
     color: var(--fgGray);
 }
+fieldset {
+    border: 2px solid var(--fgWhite);
+}
+h6 {
+    margin: 0;
+}
+inline {
+    display: flex;
+}
 
 html {
     font-family: 'Terminus', monospace;
@@ -80,4 +89,37 @@ footer div {
 }
 .mainContent span.grow {
     flex-grow: 1;
+}
+
+
+fieldset.scatter {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+fieldset.scatter svg {
+    padding: 20px;
+    border: 2px solid var(--fgWhite);
+    border-top: none;
+    border-right: none;
+}
+fieldset.scatter svg circle {
+    fill: var(--fgWhite);
+    stroke: black;
+    stroke-width: 0;
+}
+fieldset.scatter svg text {
+    fill: var(--fgWhite);
+    text-anchor: left;
+}
+fieldset.scatter .yHeader {
+    margin: auto;
+    writing-mode: vertical-rl;
+}
+fieldset.scatter .origin {
+    margin: auto;
+}
+fieldset.scatter .xHeader {
+    margin: auto;
 }

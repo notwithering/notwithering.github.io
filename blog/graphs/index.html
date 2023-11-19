@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a href="/" class="button" style="text-decoration: none;">
+                        <span class="fgRed">withering</span><span>@away ~ $ </span><span id="flicker">_</span>
+                    </a>
+                    <script defer>
+                        var flickeringElement = document.getElementById("flicker")
+                        setInterval(function() {
+                            if (flickeringElement.innerText === "_") {
+                                flickeringElement.innerText = "\u00A0"
+                            } else if (flickeringElement.innerText === "\u00A0") {
+                                flickeringElement.innerText = "_"
+                            }
+                        }, 1000)
+                    </script>
+                </h1>
+            </div>
+
+            <div>
+                <h1>
+                    <a href="/blog/" class="button">Blog</a>
+                </h1>
+            </div>
+        </header>
+
+        <div class="mainContent">
+            <span class="grow"></span>
+            <div>
+                <h2>
+                    <fieldset class="scatter">
+                        <legend>Scatter Plot</legend>
+
+                        <span class="yHeader">Y Header</span>
+                        
+                        <svg width="300" height="300" class="scatter">
+                            <circle cx="70%" cy="20%" r="5"></circle>
+                            <circle cx="60%" cy="20%" r="5"></circle>
+                            <circle cx="40%" cy="20%" r="5"></circle>
+                            <circle cx="40%" cy="40%" r="5"></circle>
+                            <circle cx="20%" cy="40%" r="5"></circle>
+                            <circle cx="30%" cy="40%" r="5"></circle>
+                            <circle cx="60%" cy="70%" r="5"></circle>
+                            <circle cx="70%" cy="70%" r="5"></circle>
+                            <circle cx="90%" cy="70%" r="5"></circle>
+                            
+                            <text x="0%" y="100%">0</text>
+                            <text x="0%" y="90%">10</text>
+                            <text x="0%" y="80%">20</text>
+                            <text x="0%" y="70%">30</text>
+                            <text x="0%" y="60%">40</text>
+                            <text x="0%" y="50%">50</text>
+                            <text x="0%" y="40%">60</text>
+                            <text x="0%" y="30%">70</text>
+                            <text x="0%" y="20%">80</text>
+                            <text x="0%" y="10%">90</text>
+                            <text x="10%" y="100%">10</text>
+                            <text x="20%" y="100%">20</text>
+                            <text x="30%" y="100%">30</text>
+                            <text x="40%" y="100%">40</text>
+                            <text x="50%" y="100%">50</text>
+                            <text x="60%" y="100%">60</text>
+                            <text x="70%" y="100%">70</text>
+                            <text x="80%" y="100%">80</text>
+                            <text x="90%" y="100%">90</text>
+                        </svg>
+
+                        <span class="origin"></span>
+                        <span class="xHeader">X Header</span>
+                    </fieldset>
+                </h2>
+                <h1>
+                    <inline>
+                        <fieldset>
+                            <legend>HTML</legend>
+                            <code lang="html">
+                                <h6>
+                                    <pre>
+&lt;h2&gt;
+    &lt;fieldset class="scatter"&gt;
+    &lt;legend&gt;Scatter Plot&lt;/legend&gt;
+
+    &lt;span class="yHeader"&gt;Y Header&lt;/span&gt;
+
+    &lt;svg width="300" height="300" class="scatter"&gt;
+        &lt;circle cx="70%" cy="20%" r="5"&gt;&lt;/circle&gt;
+        &lt;circle cx="60%" cy="20%" r="5"&gt;&lt;/circle&gt;
+        &lt;circle cx="40%" cy="20%" r="5"&gt;&lt;/circle&gt;
+        &lt;circle cx="40%" cy="40%" r="5"&gt;&lt;/circle&gt;
+        &lt;circle cx="20%" cy="40%" r="5"&gt;&lt;/circle&gt;
+        &lt;circle cx="30%" cy="40%" r="5"&gt;&lt;/circle&gt;
+        &lt;circle cx="60%" cy="70%" r="5"&gt;&lt;/circle&gt;
+        &lt;circle cx="70%" cy="70%" r="5"&gt;&lt;/circle&gt;
+        &lt;circle cx="90%" cy="70%" r="5"&gt;&lt;/circle&gt;
+
+        &lt;text x="0%" y="100%"&gt;0&lt;/text&gt;
+        &lt;text x="0%" y="90%"&gt;10&lt;/text&gt;
+        &lt;text x="0%" y="80%"&gt;20&lt;/text&gt;
+        &lt;text x="0%" y="70%"&gt;30&lt;/text&gt;
+        &lt;text x="0%" y="60%"&gt;40&lt;/text&gt;
+        &lt;text x="0%" y="50%"&gt;50&lt;/text&gt;
+        &lt;text x="0%" y="40%"&gt;60&lt;/text&gt;
+        &lt;text x="0%" y="30%"&gt;70&lt;/text&gt;
+        &lt;text x="0%" y="20%"&gt;80&lt;/text&gt;
+        &lt;text x="0%" y="10%"&gt;90&lt;/text&gt;
+        &lt;text x="10%" y="100%"&gt;10&lt;/text&gt;
+        &lt;text x="20%" y="100%"&gt;20&lt;/text&gt;
+        &lt;text x="30%" y="100%"&gt;30&lt;/text&gt;
+        &lt;text x="40%" y="100%"&gt;40&lt;/text&gt;
+        &lt;text x="50%" y="100%"&gt;50&lt;/text&gt;
+        &lt;text x="60%" y="100%"&gt;60&lt;/text&gt;
+        &lt;text x="70%" y="100%"&gt;70&lt;/text&gt;
+        &lt;text x="80%" y="100%"&gt;80&lt;/text&gt;
+        &lt;text x="90%" y="100%"&gt;90&lt;/text&gt;
+    &lt;/svg&gt;
+
+    &lt;span class="origin"&gt;&lt;/span&gt;
+    &lt;span class="xHeader"&gt;X Header&lt;/span&gt;
+    &lt;/fieldset&gt;
+&lt;/h2&gt;
+</pre>
+                            </code>
+                        </h6>
+                    </fieldset>
+                    <fieldset>
+                        <legend>CSS</legend>
+                        <code lang="css">
+                            <h6>
+                                <pre>
+fieldset.scatter {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+fieldset.scatter svg {
+    padding: 20px;
+    border: 2px solid var(--fgWhite);
+    border-top: none;
+    border-right: none;
+}
+fieldset.scatter svg circle {
+    fill: var(--fgWhite);
+    stroke: black;
+    stroke-width: 0;
+}
+fieldset.scatter svg text {
+    fill: var(--fgWhite);
+    text-anchor: left;
+}
+fieldset.scatter .yHeader {
+    margin: auto;
+    writing-mode: vertical-rl;
+}
+fieldset.scatter .origin {
+    margin: auto;
+}
+fieldset.scatter .xHeader {
+    margin: auto;
+}
+</pre>
+                                </code>
+                            </h6>
+                        </fieldset>
+                    </inline>
+                </h1>
+            </div>
+            <span class="grow"></span>
+        </div>
+
+        <footer>
+            <div>
+                <h2>
+                    Written by WitheringAway
+                </h2>
+            </div>
+
+            <div>
+                <h2>
+                    <a href="https://twitter.com/Cores64">Twitter</a>
+                    <a href="https://github.com/NotWithering">Github</a>
+                    <a href="https://discord.com/users/432983959522246657">Discord</a>
+                </h2>
+            </div>
+        </footer>
+    </body>
+</html>
