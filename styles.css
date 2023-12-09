@@ -78,6 +78,7 @@ footer div {
 .mainContent {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-grow: 1;
 }
 .mainContent div {
@@ -87,10 +88,6 @@ footer div {
     align-items: center;
     height: 100%;
 }
-.mainContent span.grow {
-    flex-grow: 1;
-}
-
 
 fieldset.scatter {
     display: grid;
