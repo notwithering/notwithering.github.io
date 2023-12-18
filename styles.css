@@ -1,20 +1,31 @@
 :root {
-    --fgWhite: #aaaaaa;
-    --fgRed: #ff5555;
-    --fgBlue: #0000aa;
-    --fgGray: #555555;
+    --background-color: var(--black);
+
+    --white: #aaaaaa;
+    --red: #ff5555;
+    --blue: #0000aa;
+    --gray: #555555;
+    --black: #000;
 }
 .fgRed {
-    color: var(--fgRed);
+    color: var(--red);
+}
+.hlWhite {
+    color: var(--background-color);
+    background-color: var(--white);
 }
 
 @font-face {
     font-family: 'Terminus';
     src: url("font/Terminus.ttf");
 }
+@font-face {
+    font-family: 'TerminusBold';
+    src: url("font/TerminusBold.ttf");
+}
 
 a {
-    color: var(--fgBlue);
+    color: var(--blue);
 }
 a.button {
     color: inherit;
@@ -22,16 +33,23 @@ a.button {
 }
 a.button:hover {
     text-decoration: underline;
-    text-decoration-color: var(--fgWhite);
+    text-decoration-color: var(--white);
 }
 time {
-    color: var(--fgGray);
+    color: var(--gray);
 }
 fieldset {
-    border: 2px solid var(--fgWhite);
+    border: 2px solid var(--white);
 }
 h6 {
     margin: 0;
+}
+strong {
+    font-family: 'TerminusBold', monospace !important;
+    font-weight: bold !important;
+}
+code {
+    text-align: left;
 }
 inline {
     display: flex;
@@ -40,7 +58,7 @@ inline {
 html {
     font-family: 'Terminus', monospace;
     background-color: black;
-    color: var(--fgWhite);
+    color: var(--white);
 }
 body {
     margin: 0;
@@ -76,16 +94,13 @@ footer div {
 }
 
 .mainContent {
-    display: flex;
-    align-items: center;
+    margin: auto;
     justify-content: center;
-    flex-grow: 1;
+    max-width: 50%;
+    word-wrap: break-word;
 }
-.mainContent div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.mainContent .title {
+    text-align: center;
 }
 
 fieldset.scatter {
@@ -93,20 +108,20 @@ fieldset.scatter {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     gap: 10px;
+    width: 0;
 }
 fieldset.scatter svg {
     padding: 20px;
-    border: 2px solid var(--fgWhite);
+    border: 2px solid var(--white);
     border-top: none;
     border-right: none;
 }
 fieldset.scatter svg circle {
-    fill: var(--fgWhite);
-    stroke: black;
+    fill: var(--white);
     stroke-width: 0;
 }
 fieldset.scatter svg text {
-    fill: var(--fgWhite);
+    fill: var(--white);
     text-anchor: left;
 }
 fieldset.scatter .yHeader {

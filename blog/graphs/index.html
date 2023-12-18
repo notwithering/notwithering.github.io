@@ -31,8 +31,8 @@
         </header>
 
         <div class="mainContent">
-            <div>
-                <h2>
+            <h1 class="hlWhite title">Graphs</h1>
+            <h2>
                     <fieldset class="scatter">
                         <legend>Scatter Plot</legend>
 
@@ -137,20 +137,21 @@ fieldset.scatter {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     gap: 10px;
+    width: 0;
 }
 fieldset.scatter svg {
     padding: 20px;
-    border: 2px solid var(--fgWhite);
+    border: 2px solid var(--white);
     border-top: none;
     border-right: none;
 }
 fieldset.scatter svg circle {
-    fill: var(--fgWhite);
+    fill: var(--white);
     stroke: black;
     stroke-width: 0;
 }
 fieldset.scatter svg text {
-    fill: var(--fgWhite);
+    fill: var(--white);
     text-anchor: left;
 }
 fieldset.scatter .yHeader {
@@ -169,7 +170,6 @@ fieldset.scatter .xHeader {
                         </fieldset>
                     </inline>
                 </h1>
-            </div>
         </div>
 
         <footer>
