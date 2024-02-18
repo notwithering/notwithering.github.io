@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a href="/" class="button" style="text-decoration: none;">
+                        <span class="fgRed">withering</span><span>@away ~ $ </span><span id="flicker">_</span>
+                    </a>
+                    <script defer>
+                        var flickeringElement = document.getElementById("flicker")
+                        setInterval(function() {
+                            if (flickeringElement.innerText === "_") {
+                                flickeringElement.innerText = "\u00A0"
+                            } else if (flickeringElement.innerText === "\u00A0") {
+                                flickeringElement.innerText = "_"
+                            }
+                        }, 1000)
+                    </script>
+                </h1>
+            </div>
+
+            <div>
+                <h1>
+                    <a href="/blog/" class="button">Blog</a>
+                </h1>
+            </div>
+        </header>
+
+        <div class="mainContent">
+            <h1 class="hlWhite title">UPmap</h1>
+            <h3>
+                <p>
+                    Okay, you've almost certainly not heard of UPmap. So let's just go around the outline and I can explain everything in the next few sections.
+                </p>
+                <p>
+                    <a href="https://github.com/NotWithering/upmap">UPmap</a> is a tool for Planetarium.<br>
+                    <a href="https://www.planetarium.digital/">Planetarium</a> is a game where people create things, and other people play them.
+                </p>
+            </h3>
+
+            <img src="planetarium.png" width="500px" alt="Screenshot of many of the same character in a single Planetarium planet">
+            <br>
+            <caption>"WE HAVE A LOT OF USERS"</caption>
+
+            <h2 class="title"><strong>What is Planetarium?</strong></h2>
+            <h3>
+                <p>
+                    <a href="https://www.planetarium.digital/">Planetarium</a>
+                    is a game ive recently been playing, it's a place where players can create things named "Planets" and other players and play these "Planets". It is very similar to <a href="https://www.roblox.com/">Roblox</a> or <a href="https://brick-hill.com/">BrickHill</a> but different in a sense.
+                </p>
+                <p>
+                    Okay yeah, so the game has a workshop where players can create stuff in it, and it has a page where you can play these games that players make. I've made a few planets myself as the time of writing this, this one's probably my favorite: <a href="https://www.planetarium.digital/games/view/?id=55">pop the bubbles</a>
+                </p>
+            </h3>
+
+            <img src="upmap.png" width="500px" alt="Picture of terminal using UPmap">
+
+            <h2 class="title"><strong>What is UPmap?</strong></h2>
+            <h3>
+                <p>
+                    <a href="https://github.com/NotWithering/upmap">UPmap</a>
+                    is a tool on MIT License that waits for a PMap file to update and then automatically publishes the game to Planetarium.
+                </p>
+                <p>
+                    A PMap file is what Planetarium uses to save your game, it's in XML format and it is a pain to use. It is something that the website asks for when you want to publish your game.
+                </p>
+                <p>
+                    So this UPmap tool is a blanket that you can place over your PMap file, and it waits for the PMap file to get written to, as soon as it does it will make an API request to Planetarium to publish your game automatically.
+                </p>
+                <p>
+                    UPmap has other options but waiting for a write is the default. Using the -now flag skips waiting for a save and just updates it now, or you can use the -silent flag and then put it in the background with "&" and it's seamless.
+                </p>
+                <p>
+                    I'm not going to sit here and list out the usage and examples, that's the job for the <a href="https://github.com/NotWithering/upmap/blob/main/README.md">README.md</a> so I suggest reading it for yourself.
+                </p>
+            </h3>
+        </div>
+
+        <footer>
+            <div>
+                <h2>
+                    Written by WitheringAway
+                </h2>
+            </div>
+
+            <div>
+                <h2>
+                    <a href="https://twitter.com/Cores64">Twitter</a>
+                    <a href="https://github.com/NotWithering">Github</a>
+                    <a href="https://discord.com/users/432983959522246657">Discord</a>
+                </h2>
+            </div>
+        </footer>
+    </body>
+</html>
