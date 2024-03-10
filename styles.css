@@ -1,11 +1,14 @@
 :root {
     --background-color: var(--black);
 
-    --white: #aaaaaa;
-    --red: #ff5555;
-    --blue: #0000aa;
-    --gray: #555555;
-    --black: #000;
+    --black: rgb(0, 0, 0);
+    --red: rgb(170, 0 , 0);
+    --green: rgb(0, 170, 0);
+    --yellow: rgb(170, 85, 0);
+    --blue: rgb(0, 0, 170);
+    --magenta: rgb(170, 0, 170);
+    --cyan: rgb(0, 170, 170);
+    --white: rgb(170, 170, 170);
 }
 .fgRed {
     color: var(--red);
