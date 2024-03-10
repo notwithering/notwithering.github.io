@@ -9,6 +9,15 @@
     --magenta: rgb(170, 0, 170);
     --cyan: rgb(0, 170, 170);
     --white: rgb(170, 170, 170);
+
+    --hi-black: rgb(85, 85, 85);
+    --hi-red: rgb(255, 85 , 85);
+    --hi-green: rgb(85, 255, 85);
+    --hi-yellow: rgb(255, 255, 85);
+    --hi-blue: rgb(85, 85, 255);
+    --hi-magenta: rgb(255, 85, 255);
+    --hi-cyan: rgb(85, 255, 255);
+    --hi-white: rgb(255, 255, 255);
 }
 .fgRed {
     color: var(--red);
