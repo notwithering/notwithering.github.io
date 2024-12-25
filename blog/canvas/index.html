@@ -1,87 +1,104 @@
 <html>
-    <head>
-        <title>Blog</title>
-        <link rel="stylesheet" href="/styles.css">
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1>
-                    <a href="/" class="button" style="text-decoration: none;">
-                        <span style="color: var(--hi-red);">withering</span><span>@away ~ $ </span><span class="blinking">_</span>
-                    </a>
-                </h1>
-            </div>
 
-            <div>
-                <h1>
-                    <a href="/blog/" class="button">Blog</a>
-                </h1>
-            </div>
-        </header>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" href="/styles.css">
+</head>
 
-        <div class="mainContent">
-			<h1 class="title">
-                <p style="color: var(--black); background-color: var(--yellow);">[DEPRECATED]</p>
-            </h1>
-            <h3 class="title">
-                <p>
-                    Please see <a href="https://github.com/notwithering/canvas/blob/main/README.md">README.md</a> for more information on the deprecation of this program.
-                </p>
-            </h3>
-            <h1 class="hlWhite title">Canvas</h1>
-            <img src="https://raw.githubusercontent.com/notwithering/canvas/master/screenshot.png" width="500px">
+<body>
+	<header>
+		<div>
+			<h1>
+				<a href="/" class="button" style="text-decoration: none;">
+					<span style="color: var(--hi-red);">withering</span><span>@away ~ $ </span><span
+						class="blinking">_</span>
+				</a>
+			</h1>
+		</div>
 
-            <h2 class="title"><strong>What is Viu?</strong></h2>
-            <h3>
-                <p>
-                    <a href="https://github.com/atanunq/viu">Viu</a>
-                    is a command-line application to view images inside the terminal. This small program uses a very clever technique to still display images even when the terminal doesn't support image display.
-                </p>
-                <img src="viu.png" width="250px">
-            </h3>
-            
-            <h2 class="title"><strong>What is subcharacter-layering?</strong></h2>
-            <h3>
-                <p>
-                    The way it's able to do this is by using ANSI escape codes along with Half Block characters. Viu uses the Lower Half Block unicode character (U+2584 "▄") with 2 ANSI escape codes.
-                </p>
-                <p>
-                    The program takes the first pixel of the image and sets its color as the background color then takes the pixel color directly below it and sets that as the foreground color.
-                </p>
-                <p>
-                    ANSI takes the Lower Half Block character and sets the background color of it to the top pixel color of the pair. ANSI then takes the foreground color and sets the color of the character to the foreground color which is set to be the bottom pixel color of the pair. Think of it as drawing a rectangle of the top pixel color and drawing a square of the bottom pixel color over it. The rectangle being the background color while the square is the Lower Half Block character. 
-                </p>
-                <img src="layering.gif" width="250px">
-            </h3>
+		<div>
+			<h1>
+				<a href="/blog/" class="button">Blog</a>
+			</h1>
+		</div>
+	</header>
 
-            <h2 class="title"><strong>What is this package I'm developing?</strong></h2>
-            <h3>
-                <p>
-                    <a href="https://github.com/notwithering/canvas">Canvas</a>
-                    is a package for go that I am currently developing. This package at the time of writing this provides multiple functions and types to help you implement subcharacter-layering. It provides functions to create canvases, fill canvases, render a canvas, and convert an image to a canvas.
-                </p>
-                <p>
-                    What types of subcharacter-layering does it support? The package is still in it's very early stages of development so it can only use half block subcharacter-layering. I am very excited to add sextant subcharacter-layering which uses sextant blocks (eg. 🬥🬔) which will provide 4 more pixels than half block subcharacter-layering and 6 more than plain 2 character-wide pixels while being thinner.
-                </p>
-                
-            </h3>
-        </div>
+	<div class="mainContent">
+		<h1 class="title">
+			<p style="color: var(--black); background-color: var(--yellow);">[DEPRECATED]</p>
+		</h1>
+		<h3 class="title">
+			<p>
+				Please see <a href="https://github.com/notwithering/canvas/blob/main/README.md">README.md</a> for more
+				information on the deprecation of this program.
+			</p>
+		</h3>
+		<h1 class="hlWhite title">Canvas</h1>
+		<img src="https://raw.githubusercontent.com/notwithering/canvas/master/screenshot.png" width="500px">
 
-        <footer>
-            <div>
-                <h2>
-                    Written by WitheringAway
-                </h2>
-            </div>
+		<h2 class="title"><strong>What is Viu?</strong></h2>
+		<h3>
+			<p>
+				<a href="https://github.com/atanunq/viu">Viu</a>
+				is a command-line application to view images inside the terminal. This small program uses a very clever
+				technique to still display images even when the terminal doesn't support image display.
+			</p>
+			<img src="viu.png" width="250px">
+		</h3>
 
-            <div>
-                <h2>
-                    <a href="https://twitter.com/Cores64">Twitter</a>
-                    <a href="https://github.com/notwithering">Github</a>
-                    <a href="https://discord.com/users/432983959522246657">Discord</a>
-                </h2>
-            </div>
-        </footer>
-    </body>
+		<h2 class="title"><strong>What is subcharacter-layering?</strong></h2>
+		<h3>
+			<p>
+				The way it's able to do this is by using ANSI escape codes along with Half Block characters. Viu uses
+				the Lower Half Block unicode character (U+2584 "▄") with 2 ANSI escape codes.
+			</p>
+			<p>
+				The program takes the first pixel of the image and sets its color as the background color then takes the
+				pixel color directly below it and sets that as the foreground color.
+			</p>
+			<p>
+				ANSI takes the Lower Half Block character and sets the background color of it to the top pixel color of
+				the pair. ANSI then takes the foreground color and sets the color of the character to the foreground
+				color which is set to be the bottom pixel color of the pair. Think of it as drawing a rectangle of the
+				top pixel color and drawing a square of the bottom pixel color over it. The rectangle being the
+				background color while the square is the Lower Half Block character.
+			</p>
+			<img src="layering.gif" width="250px">
+		</h3>
+
+		<h2 class="title"><strong>What is this package I'm developing?</strong></h2>
+		<h3>
+			<p>
+				<a href="https://github.com/notwithering/canvas">Canvas</a>
+				is a package for go that I am currently developing. This package at the time of writing this provides
+				multiple functions and types to help you implement subcharacter-layering. It provides functions to
+				create canvases, fill canvases, render a canvas, and convert an image to a canvas.
+			</p>
+			<p>
+				What types of subcharacter-layering does it support? The package is still in it's very early stages of
+				development so it can only use half block subcharacter-layering. I am very excited to add sextant
+				subcharacter-layering which uses sextant blocks (eg. 🬥🬔) which will provide 4 more pixels than half
+				block subcharacter-layering and 6 more than plain 2 character-wide pixels while being thinner.
+			</p>
+
+		</h3>
+	</div>
+
+	<footer>
+		<div>
+			<h2>
+				Written by WitheringAway
+			</h2>
+		</div>
+
+		<div>
+			<h2>
+				<a href="https://twitter.com/Cores64">Twitter</a>
+				<a href="https://github.com/notwithering">Github</a>
+				<a href="https://discord.com/users/432983959522246657">Discord</a>
+			</h2>
+		</div>
+	</footer>
+</body>
+
 </html>

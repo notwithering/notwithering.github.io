@@ -1,74 +1,77 @@
 <html>
-    <head>
-        <title>Blog</title>
-        <link rel="stylesheet" href="/styles.css">
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1>
-                    <a href="/" class="button" style="text-decoration: none;">
-                        <span style="color: var(--hi-red);">withering</span><span>@away ~ $ </span><span class="blinking">_</span>
-                    </a>
-                </h1>
-            </div>
 
-            <div>
-                <h1>
-                    <a href="/blog/" class="button">Blog</a>
-                </h1>
-            </div>
-        </header>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" href="/styles.css">
+</head>
 
-        <div class="mainContent">
-            <h1 class="hlWhite title">Graphs</h1>
-            <h2>
-                    <fieldset class="scatter">
-                        <legend>Scatter Plot</legend>
+<body>
+	<header>
+		<div>
+			<h1>
+				<a href="/" class="button" style="text-decoration: none;">
+					<span style="color: var(--hi-red);">withering</span><span>@away ~ $ </span><span
+						class="blinking">_</span>
+				</a>
+			</h1>
+		</div>
 
-                        <span class="yHeader">Y Header</span>
-                        
-                        <svg width="300" height="300" class="scatter">
-                            <circle cx="70%" cy="20%" r="5"></circle>
-                            <circle cx="60%" cy="20%" r="5"></circle>
-                            <circle cx="40%" cy="20%" r="5"></circle>
-                            <circle cx="40%" cy="40%" r="5"></circle>
-                            <circle cx="20%" cy="40%" r="5"></circle>
-                            <circle cx="30%" cy="40%" r="5"></circle>
-                            <circle cx="60%" cy="70%" r="5"></circle>
-                            <circle cx="70%" cy="70%" r="5"></circle>
-                            <circle cx="90%" cy="70%" r="5"></circle>
-                            
-                            <text x="0%" y="100%">0</text>
-                            <text x="0%" y="90%">10</text>
-                            <text x="0%" y="80%">20</text>
-                            <text x="0%" y="70%">30</text>
-                            <text x="0%" y="60%">40</text>
-                            <text x="0%" y="50%">50</text>
-                            <text x="0%" y="40%">60</text>
-                            <text x="0%" y="30%">70</text>
-                            <text x="0%" y="20%">80</text>
-                            <text x="0%" y="10%">90</text>
-                            <text x="10%" y="100%">10</text>
-                            <text x="20%" y="100%">20</text>
-                            <text x="30%" y="100%">30</text>
-                            <text x="40%" y="100%">40</text>
-                            <text x="50%" y="100%">50</text>
-                            <text x="60%" y="100%">60</text>
-                            <text x="70%" y="100%">70</text>
-                            <text x="80%" y="100%">80</text>
-                            <text x="90%" y="100%">90</text>
-                        </svg>
+		<div>
+			<h1>
+				<a href="/blog/" class="button">Blog</a>
+			</h1>
+		</div>
+	</header>
 
-                        <span class="origin"></span>
-                        <span class="xHeader">X Header</span>
-                    </fieldset>
-                </h2>
-                <h1>
-                    <inline>
-                        <fieldset>
-                            <legend>HTML</legend>
-                            <code lang="html">
+	<div class="mainContent">
+		<h1 class="hlWhite title">Graphs</h1>
+		<h2>
+			<fieldset class="scatter">
+				<legend>Scatter Plot</legend>
+
+				<span class="yHeader">Y Header</span>
+
+				<svg width="300" height="300" class="scatter">
+					<circle cx="70%" cy="20%" r="5"></circle>
+					<circle cx="60%" cy="20%" r="5"></circle>
+					<circle cx="40%" cy="20%" r="5"></circle>
+					<circle cx="40%" cy="40%" r="5"></circle>
+					<circle cx="20%" cy="40%" r="5"></circle>
+					<circle cx="30%" cy="40%" r="5"></circle>
+					<circle cx="60%" cy="70%" r="5"></circle>
+					<circle cx="70%" cy="70%" r="5"></circle>
+					<circle cx="90%" cy="70%" r="5"></circle>
+
+					<text x="0%" y="100%">0</text>
+					<text x="0%" y="90%">10</text>
+					<text x="0%" y="80%">20</text>
+					<text x="0%" y="70%">30</text>
+					<text x="0%" y="60%">40</text>
+					<text x="0%" y="50%">50</text>
+					<text x="0%" y="40%">60</text>
+					<text x="0%" y="30%">70</text>
+					<text x="0%" y="20%">80</text>
+					<text x="0%" y="10%">90</text>
+					<text x="10%" y="100%">10</text>
+					<text x="20%" y="100%">20</text>
+					<text x="30%" y="100%">30</text>
+					<text x="40%" y="100%">40</text>
+					<text x="50%" y="100%">50</text>
+					<text x="60%" y="100%">60</text>
+					<text x="70%" y="100%">70</text>
+					<text x="80%" y="100%">80</text>
+					<text x="90%" y="100%">90</text>
+				</svg>
+
+				<span class="origin"></span>
+				<span class="xHeader">X Header</span>
+			</fieldset>
+		</h2>
+		<h1>
+			<inline>
+				<fieldset>
+					<legend>HTML</legend>
+					<code lang="html">
                                 <h6>
                                     <pre>
 &lt;h2&gt;
@@ -115,11 +118,11 @@
 &lt;/h2&gt;
 </pre>
                             </code>
-                        </h6>
-                    </fieldset>
-                    <fieldset>
-                        <legend>CSS</legend>
-                        <code lang="css">
+					</h6>
+				</fieldset>
+				<fieldset>
+					<legend>CSS</legend>
+					<code lang="css">
                             <h6>
                                 <pre>
 fieldset.scatter {
@@ -156,26 +159,27 @@ fieldset.scatter .xHeader {
 }
 </pre>
                                 </code>
-                            </h6>
-                        </fieldset>
-                    </inline>
-                </h1>
-        </div>
+					</h6>
+				</fieldset>
+			</inline>
+		</h1>
+	</div>
 
-        <footer>
-            <div>
-                <h2>
-                    Written by WitheringAway
-                </h2>
-            </div>
+	<footer>
+		<div>
+			<h2>
+				Written by WitheringAway
+			</h2>
+		</div>
 
-            <div>
-                <h2>
-                    <a href="https://twitter.com/Cores64">Twitter</a>
-                    <a href="https://github.com/notwithering">Github</a>
-                    <a href="https://discord.com/users/432983959522246657">Discord</a>
-                </h2>
-            </div>
-        </footer>
-    </body>
+		<div>
+			<h2>
+				<a href="https://twitter.com/Cores64">Twitter</a>
+				<a href="https://github.com/notwithering">Github</a>
+				<a href="https://discord.com/users/432983959522246657">Discord</a>
+			</h2>
+		</div>
+	</footer>
+</body>
+
 </html>
