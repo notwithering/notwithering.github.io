@@ -90,6 +90,16 @@ header div {
     display: flex;
     justify-content: center;
 }
+.blinking {
+    animation: blinking-animation 2s steps(1) infinite;
+}
+@keyframes blinking-animation {
+	50% {
+		opacity: 0;
+	}
+}
+
+
 
 footer {
     position: sticky;

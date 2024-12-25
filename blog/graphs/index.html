@@ -8,18 +8,8 @@
             <div>
                 <h1>
                     <a href="/" class="button" style="text-decoration: none;">
-                        <span style="color: var(--hi-red);">withering</span><span>@away ~ $ </span><span id="flicker">_</span>
+                        <span style="color: var(--hi-red);">withering</span><span>@away ~ $ </span><span class="blinking">_</span>
                     </a>
-                    <script defer>
-                        var flickeringElement = document.getElementById("flicker")
-                        setInterval(function() {
-                            if (flickeringElement.innerText === "_") {
-                                flickeringElement.innerText = "\u00A0"
-                            } else if (flickeringElement.innerText === "\u00A0") {
-                                flickeringElement.innerText = "_"
-                            }
-                        }, 1000)
-                    </script>
                 </h1>
             </div>
 

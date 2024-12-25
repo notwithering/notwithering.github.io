@@ -8,18 +8,8 @@
             <div>
                 <h1>
                     <a href="/" class="button" style="text-decoration: none;">
-                        <span style="color: var(--hi-red);">withering</span><span>@away ~ $ </span><span id="flicker">_</span>
-                    </a>
-                    <script defer>
-                        var flickeringElement = document.getElementById("flicker")
-                        setInterval(function() {
-                            if (flickeringElement.innerText === "_") {
-                                flickeringElement.innerText = "\u00A0"
-                            } else if (flickeringElement.innerText === "\u00A0") {
-                                flickeringElement.innerText = "_"
-                            }
-                        }, 1000)
-                    </script>
+                        <span style="color: var(--hi-red);">withering</span><span>@away ~ $ </span><span class="blinking">_</span>
+					</a>
                 </h1>
             </div>
 
@@ -31,6 +21,11 @@
         </header>
 
         <div class="mainContent">
+			<h2><a href="./no-more-javascript/">No more JavaScript!</a></h2>
+            <time datetime="2024-09-15">December 24, 2024</time>
+            <p>What do I mean by "No more JavaScript"?</p>
+            <hr>
+
             <h2><a href="./the-problem-with-color-schemes/">The problem with color schemes</a></h2>
             <time datetime="2024-09-15">September 15, 2024</time>
             <p>Actually, why are so many color schemes completely horrid?</p>
