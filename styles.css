@@ -22,6 +22,9 @@
 .fgRed {
     color: var(--red);
 }
+.fgHiRed {
+	color: var(--hi-red)
+}
 .hlWhite {
     color: var(--background-color);
     background-color: var(--white);
