@@ -124,6 +124,9 @@ footer div {
 .mainContent .title {
     text-align: center;
 }
+.no-select {
+	user-select: none;
+}
 
 fieldset.scatter {
     display: grid;
