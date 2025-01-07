@@ -2,7 +2,7 @@
     --background-color: var(--black);
 
     --black: rgb(0, 0, 0);
-    --red: rgb(170, 0 , 0);
+    --red: rgb(170, 0, 0);
     --green: rgb(0, 170, 0);
     --yellow: rgb(170, 85, 0);
     --blue: rgb(0, 0, 170);
@@ -11,7 +11,7 @@
     --white: rgb(170, 170, 170);
 
     --hi-black: rgb(85, 85, 85);
-    --hi-red: rgb(255, 85 , 85);
+    --hi-red: rgb(255, 85, 85);
     --hi-green: rgb(85, 255, 85);
     --hi-yellow: rgb(255, 255, 85);
     --hi-blue: rgb(85, 85, 255);
@@ -20,14 +20,14 @@
     --hi-white: rgb(255, 255, 255);
 }
 .fgYellow {
-	color: var(--yellow);
+    color: var(--yellow);
 }
 .fgHiRed {
-	color: var(--hi-red)
+    color: var(--hi-red);
 }
 .hlYellow {
-	color: var(--background-color);
-	background-color: var(--yellow);
+    color: var(--background-color);
+    background-color: var(--yellow);
 }
 .hlWhite {
     color: var(--background-color);
@@ -35,11 +35,11 @@
 }
 
 @font-face {
-    font-family: 'Terminus';
+    font-family: "Terminus";
     src: url("font/Terminus.ttf");
 }
 @font-face {
-    font-family: 'TerminusBold';
+    font-family: "TerminusBold";
     src: url("font/TerminusBold.ttf");
 }
 
@@ -55,8 +55,8 @@ a.button:hover {
     text-decoration-color: var(--white);
 }
 a.logo {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 time {
     color: var(--gray);
@@ -68,7 +68,7 @@ h6 {
     margin: 0;
 }
 strong {
-    font-family: 'TerminusBold', monospace !important;
+    font-family: "TerminusBold", monospace !important;
     font-weight: bold !important;
 }
 code {
@@ -79,7 +79,7 @@ inline {
 }
 
 html {
-    font-family: 'Terminus', monospace;
+    font-family: "Terminus", monospace;
     background-color: black;
     color: var(--white);
 }
@@ -105,12 +105,10 @@ header div {
     animation: blinking-animation 2s steps(1) infinite;
 }
 @keyframes blinking-animation {
-	50% {
-		opacity: 0;
-	}
+    50% {
+        opacity: 0;
+    }
 }
-
-
 
 footer {
     position: sticky;
@@ -136,7 +134,7 @@ footer div {
     text-align: center;
 }
 .no-select {
-	user-select: none;
+    user-select: none;
 }
 
 fieldset.scatter {
